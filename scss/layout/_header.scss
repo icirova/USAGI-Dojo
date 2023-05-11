@@ -1,0 +1,68 @@
+@use '../abstracts/variables';
+
+.header-aligner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+.header {
+    // background-image: url(/images/men.jpg);
+    background-size: cover;
+    @media screen and (min-width: 680px) {
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin: variables.$spacer;
+        @media screen and (min-width: 680px) {
+            width: 120px;
+        }
+
+    }
+    
+    &__text {
+        margin: variables.$spacer;
+    }
+     
+    &__title {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-family: variables.$title-font;
+        font-weight: 700;
+       
+        @media screen and (min-width: 680px) {
+            font-size: 2.5em;
+        }
+    }
+
+    &__description {
+        font-size: 1em;
+        font-family: variables.$title-font;
+        
+        @media screen and (min-width: 680px) {
+            font-size: 1.5em;
+        }
+
+    }
+
+    &__description::before {
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 3px;
+        background-color: variables.$color-primary;
+        margin: 0px variables.$spacer 6px 0;
+          
+    }
+}
+
+
+
+
+
+  

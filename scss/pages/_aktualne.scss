@@ -1,0 +1,45 @@
+@use '../abstracts/variables';
+
+.news-wrapper {
+
+    @media screen and (min-width: 680px) {
+        display: grid;
+        gap: variables.$spacer;
+        grid-template-columns: repeat(2, auto);
+        margin: variables.$spacer 0;
+
+    }
+}
+
+.news__title {
+    font-family: variables.$title-font;
+
+}
+
+.card {
+    min-height: 120px;
+    background-color: white;
+    color:black;
+    border-radius: 3px;
+    padding: variables.$spacer;
+    margin: variables.$spacer 0;
+
+    @media screen and (min-width: 680px) {
+        margin: 0;
+    }
+
+    
+
+    &__title {
+        font-family: variables.$title-font;
+        font-weight: 700;
+        color: variables.$color-primary;
+        font-size: 1.2em;
+        margin: variables.$half-spacer 0;
+    }
+    &__date {
+       
+        color: variables.$color-secundary;
+    }
+
+}

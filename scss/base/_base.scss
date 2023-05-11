@@ -1,0 +1,25 @@
+@use '../abstracts/variables';
+
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; margin: 0; padding: 0; }
+
+body {
+    background-color: variables.$color-secundary;
+    color:white;
+    font-family: variables.$default-font;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+   
+     
+}
+
+
+.main {
+    padding: variables.$double-spacer variables.$spacer;
+    
+    
+}
+

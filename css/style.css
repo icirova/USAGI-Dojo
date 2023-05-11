@@ -1,1 +1,298 @@
-/*# sourceMappingURL=style.css.map */
+.header-aligner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  background-size: cover;
+}
+@media screen and (min-width: 680px) {
+  .header {
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.header__logo {
+  margin: 20px;
+}
+@media screen and (min-width: 680px) {
+  .header__logo {
+    width: 120px;
+  }
+}
+.header__text {
+  margin: 20px;
+}
+.header__title {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+@media screen and (min-width: 680px) {
+  .header__title {
+    font-size: 2.5em;
+  }
+}
+.header__description {
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+}
+@media screen and (min-width: 680px) {
+  .header__description {
+    font-size: 1.5em;
+  }
+}
+.header__description::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background-color: #d40000;
+  margin: 0px 20px 6px 0;
+}
+
+@media screen and (min-width: 680px) {
+  .menu__list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+.menu__item {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  padding: 5px;
+}
+@media screen and (min-width: 680px) {
+  .menu__item {
+    padding: 10px;
+    font-size: 1.1em;
+  }
+}
+.menu__item:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 680px) {
+  .menu__item:hover {
+    color: #d40000;
+  }
+}
+
+.footer__description {
+  padding: 20px;
+  text-align: center;
+}
+
+.main__image {
+  width: 100%;
+}
+.main__title {
+  font-size: 1.5em;
+}
+@media screen and (min-width: 680px) {
+  .main__title {
+    font-size: 2em;
+  }
+}
+.main__text {
+  font-size: 1em;
+}
+@media screen and (min-width: 680px) {
+  .main__text {
+    font-size: 1.5em;
+  }
+}
+.main__title, .main__text {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin: 40px 0;
+}
+.main__text::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background-color: #d40000;
+  margin: 0 20px 6px 0;
+}
+@media screen and (min-width: 680px) {
+  .main__text::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    background-color: #d40000;
+    margin: 0 0 6px 13px;
+  }
+}
+.main__content {
+  margin: 20px 0;
+}
+
+.title-color {
+  text-transform: uppercase;
+  color: #d40000;
+}
+
+@media screen and (min-width: 680px) {
+  .news-wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, auto);
+    margin: 20px 0;
+  }
+}
+
+.news__title {
+  font-family: "Open Sans", sans-serif;
+}
+
+.card {
+  min-height: 120px;
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 20px 0;
+}
+@media screen and (min-width: 680px) {
+  .card {
+    margin: 0;
+  }
+}
+.card__title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #d40000;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+.card__date {
+  color: #11052E;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #11052E;
+  color: white;
+  font-family: "Noto Serif", serif;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.main {
+  padding: 40px 20px;
+}
+
+@media screen and (min-width: 680px) {
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+  }
+}
+
+.contacts__title {
+  font-family: "Open Sans", sans-serif;
+}
+
+.contacts__adress {
+  margin: 20px 0;
+}
+
+.contact {
+  min-height: 120px;
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 20px 0;
+}
+.contact__name {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #d40000;
+  font-size: 1.2em;
+}
+.contact__role {
+  margin: 10px 0;
+  color: #11052E;
+  font-weight: 700;
+}
+
+.training__image {
+  width: 100%;
+  margin: 20px 0;
+}
+.training__title {
+  font-family: "Open Sans", sans-serif;
+}
+@media screen and (min-width: 680px) {
+  .training__title {
+    font-size: 2em;
+  }
+}
+.training__subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  margin: 40px 0;
+}
+@media screen and (min-width: 680px) {
+  .training__subtitle {
+    font-size: 1.5em;
+  }
+}
+.training__subtitle::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background-color: #d40000;
+  margin: 0 20px 6px 0;
+}
+
+.course {
+  min-height: 120px;
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 20px 0;
+}
+.course__title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #d40000;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+@media screen and (min-width: 680px) {
+  .course__title {
+    font-size: 2em;
+  }
+}
+.course__subtitle {
+  margin: 20px 0;
+  color: #11052E;
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */

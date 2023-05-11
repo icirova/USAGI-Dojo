@@ -4,18 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <title>USAGI Dojo</title>
+    <title>{{title}}</title>
 </head>
 <body>
-    <header>
-        
-    </header>
 
-    <main class="main">
+    <div class="wrapper">  
+        <header class="header">
+
+            <div class="header-aligner">
+                <a href="/">
+                    <img class="header__logo" src="/images/Usagi_logo.svg" alt="logo" width="100px">
+                </a>
+
+                <div class="header__text">
+                    <p class="header__title">Usagi Dojo</p>
+                    <p class="header__description">Klub japonského bojového umění kendó</p>
+                </div>
+
+            </div>
+                
+                <nav class="menu">
+
+                    <div class="menu__list">
+                        <a class="menu__item" href="/">O nás</a>
+                        <a class="menu__item" href="/aktualne/">Aktuálně</a>
+                        <a class="menu__item" href="/kalendar/">Kalendář</a>
+                        <a class="menu__item" href="/jak-zacit/">Jak začít</a>
+                        <a class="menu__item" href="/o-kendo/">O kendó</a>    
+                        <a class="menu__item" href="/kontakty/">Kontakty</a>  
+                    </div>     
+                </nav>
+
+            
+            
+            
+
+        </header>
+
+
+
+        <main class="main">
         {{content|safe}}
-    </main>
+        </main>
 
-    <footer></footer>
+        <footer>
+            <p class="footer__description">By Iveta Círová</p>
+        </footer>
+
+    </div>
+
 </body>
 </html>

@@ -1,0 +1,6 @@
+@use '../abstracts/variables';
+
+.footer__description {
+    padding: variables.$spacer;
+    text-align: center;
+}

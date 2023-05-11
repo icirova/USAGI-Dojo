@@ -1,0 +1,35 @@
+@use '../abstracts/variables';
+
+.menu {
+    &__list {
+        @media screen and (min-width: 680px) {
+            display: flex;
+            justify-content: center;
+            gap: variables.$half-spacer;
+            
+        }
+    }
+
+    &__item {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: variables.$title-font;
+        padding: 5px;
+        
+        @media screen and (min-width: 680px) {
+            padding: variables.$half-spacer;
+            font-size: 1.1em;
+        }
+    }
+    
+    &__item:hover {
+        cursor: pointer;
+
+        @media screen and (min-width: 680px) {
+            color: variables.$color-primary;;
+        }
+    }
+}
