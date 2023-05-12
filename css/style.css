@@ -55,6 +55,31 @@
   margin: 0px 20px 6px 0;
 }
 
+.menu__checkbox {
+  position: absolute;
+  left: -9999px;
+}
+@media screen and (max-width: 679px) {
+  .menu__checkbox:checked ~ .menu__list {
+    display: block;
+  }
+}
+.menu__toggler {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+@media screen and (min-width: 680px) {
+  .menu__toggler {
+    display: none;
+  }
+}
+.menu__list {
+  display: none;
+}
 @media screen and (min-width: 680px) {
   .menu__list {
     display: flex;
@@ -154,6 +179,11 @@
 .news__title {
   font-family: "Open Sans", sans-serif;
 }
+@media screen and (min-width: 680px) {
+  .news__title {
+    font-size: 2em;
+  }
+}
 
 .card {
   min-height: 120px;
@@ -215,6 +245,11 @@ body {
 .contacts__title {
   font-family: "Open Sans", sans-serif;
 }
+@media screen and (min-width: 680px) {
+  .contacts__title {
+    font-size: 2em;
+  }
+}
 
 .contacts__adress {
   margin: 20px 0;
@@ -238,6 +273,58 @@ body {
   margin: 10px 0;
   color: #11052E;
   font-weight: 700;
+}
+
+.kendo__title {
+  font-size: 1.5em;
+  font-family: "Open Sans", sans-serif;
+}
+@media screen and (min-width: 680px) {
+  .kendo__title {
+    font-size: 2em;
+  }
+}
+
+.kendo__list {
+  margin: 20px 0;
+}
+
+.kendo__item {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  padding: 5px;
+}
+@media screen and (min-width: 680px) {
+  .kendo__item {
+    padding: 10px;
+    font-size: 1.1em;
+  }
+}
+
+.kendo__item:hover {
+  cursor: pointer;
+}
+
+.kendo__subtitle {
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+}
+@media screen and (min-width: 680px) {
+  .kendo__subtitle {
+    padding: 10px;
+    font-size: 1.5em;
+  }
+}
+
+.kendo__subtitle::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background-color: #d40000;
+  margin: 0 20px 6px 0;
 }
 
 .training__image {

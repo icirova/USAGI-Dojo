@@ -1,7 +1,35 @@
 @use '../abstracts/variables';
 
 .menu {
+
+    &__checkbox {
+	position: absolute;
+	left:  -9999px;
+    }
+
+    &__checkbox:checked ~ .menu__list {
+        @media screen and (max-width: 679px) {
+            display: block;
+        }   
+    }
+
+    &__toggler {
+        text-transform: uppercase;
+        font-family: variables.$title-font;
+        display: block;
+        // border-bottom: 1px solid white;
+        padding: 5px;
+        text-align: center;
+        cursor: pointer;
+
+        @media screen and (min-width: 680px) {
+            display: none;
+        }
+    }
+
     &__list {
+        display: none;
+        
         @media screen and (min-width: 680px) {
             display: flex;
             justify-content: center;

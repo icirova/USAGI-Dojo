@@ -13,6 +13,12 @@
 
 .contacts__title {
     font-family: variables.$title-font;
+    
+    @media screen and (min-width: 680px) {
+        font-size:2em;
+    }
+   
+
 }
 
 .contacts__adress {

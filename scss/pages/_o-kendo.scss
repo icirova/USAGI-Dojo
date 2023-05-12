@@ -1,0 +1,63 @@
+@use '../abstracts/variables';
+
+.kendo__title {
+    font-size: 1.5em;
+    font-family: variables.$title-font;
+
+    @media screen and (min-width: 680px) {
+        font-size: 2em;
+    }
+
+}
+
+.kendo__list {
+    margin: variables.$spacer 0;
+}
+
+
+.kendo__item {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-family: variables.$title-font;
+        padding: 5px;
+        
+        @media screen and (min-width: 680px) {
+            padding: variables.$half-spacer;
+            font-size: 1.1em;
+        }
+    }
+
+//     .kendo__item::before {
+//         content: "";
+//         display: inline-block;
+//         width: 30px;
+//         height: 3px;
+//         background-color: variables.$color-primary;
+//         margin: 0 variables.$spacer 6px 0;
+// }
+    
+    .kendo__item:hover {
+        cursor: pointer;
+
+    }
+
+    .kendo__subtitle {
+        font-size: 1em;
+        font-family: variables.$title-font;
+
+        @media screen and (min-width: 680px) {
+                    padding: variables.$half-spacer;
+                    font-size: 1.5em;
+                }
+    }
+
+    .kendo__subtitle::before {
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 3px;
+        background-color: variables.$color-primary;
+        margin: 0 variables.$spacer 6px 0;
+}
+
