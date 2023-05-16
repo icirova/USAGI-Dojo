@@ -4,12 +4,12 @@
     <label for="menu-checkbox" class="menu__toggler">☰ menu</label>
 
     <div class="menu__list">
-        <a class="menu__item" href="/">O nás</a>
-        <a class="menu__item" href="/aktualne/">Aktuálně</a>
-        <a class="menu__item" href="/kalendar/">Kalendář</a>
-        <a class="menu__item" href="/jak-zacit/">Jak začít</a>
-        <a class="menu__item" href="/o-kendo/">O kendó</a>    
-        <a class="menu__item" href="/kontakty/">Kontakty</a>  
+        <a class="menu__item {{ 'menu__item--active' if page.fileSlug === '' }}" href="/">O nás</a>
+        <a class="menu__item {{ 'menu__item--active' if page.fileSlug === 'aktualne' }}" href="/aktualne/">Aktuálně</a>
+        <a class="menu__item {{ 'menu__item--active' if page.fileSlug === 'kalendar' }}" href="/kalendar/">Kalendář</a>
+        <a class="menu__item {{ 'menu__item--active' if page.fileSlug === 'jak-zacit' }}" href="/jak-zacit/">Jak začít</a>
+        <a class="menu__item {{ 'menu__item--active' if page.fileSlug === 'o-kendo' }}" href="/o-kendo/">O kendó</a>    
+        <a class="menu__item {{ 'menu__item--active' if page.fileSlug === 'kontakty' }}" href="/kontakty/">Kontakty</a>  
     </div> 
         
 </nav>

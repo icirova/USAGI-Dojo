@@ -4,6 +4,7 @@
    
     &__image {
         width: 100%;
+        border-radius: 4px;
     }
 
     
@@ -12,6 +13,10 @@
         @media screen and (min-width: 680px) {
             font-size: 2em;
         }
+    }
+
+    &__link {
+        color: variables.$color-primary;
     }
 
     &__text {
@@ -57,3 +62,4 @@
     text-transform: uppercase;
     color: variables.$color-primary;
 }
+

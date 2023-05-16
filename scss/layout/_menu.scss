@@ -53,11 +53,15 @@
         }
     }
     
-    &__item:hover {
+    &__item:hover, &__item:focus {
         cursor: pointer;
 
         @media screen and (min-width: 680px) {
-            color: variables.$color-primary;;
+            color: variables.$color-primary;
         }
     }
+}
+
+.menu__item--active {
+    color: variables.$color-primary;
 }

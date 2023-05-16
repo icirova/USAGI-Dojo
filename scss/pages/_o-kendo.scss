@@ -3,6 +3,7 @@
 .kendo__title {
     font-size: 1.5em;
     font-family: variables.$title-font;
+    text-align: center;
 
     @media screen and (min-width: 680px) {
         font-size: 2em;
@@ -17,13 +18,13 @@
 
 .kendo__item {
         display: block;
-        color: white;
+        // color: white;
         text-decoration: none;
         font-family: variables.$title-font;
-        padding: 5px;
+        padding: 5px 0;
         
         @media screen and (min-width: 680px) {
-            padding: variables.$half-spacer;
+            padding: variables.$half-spacer 0;
             font-size: 1.1em;
         }
     }
@@ -42,13 +43,20 @@
 
     }
 
+    .kendo__description {
+        margin: variables.$half-spacer 0;
+    }
+
     .kendo__subtitle {
         font-size: 1em;
         font-family: variables.$title-font;
+        margin: variables.$double-spacer 0 variables.$spacer 0;
 
         @media screen and (min-width: 680px) {
                     padding: variables.$half-spacer;
                     font-size: 1.5em;
+                    text-align: center;
+                    margin: variables.$double-spacer 0;
                 }
     }
 
@@ -59,5 +67,31 @@
         height: 3px;
         background-color: variables.$color-primary;
         margin: 0 variables.$spacer 6px 0;
+}
+
+
+
+// .kendo-article {
+//     background-color: white;
+//     color: black;
+//     padding: variables.$spacer;
+//     border-radius: 4px;
+
+// }
+
+.kendo-equipment__image {
+    width: 100%;
+    border-radius: 4px;
+    margin-top: variables.$spacer;
+}
+
+.care-subtitle,
+.dictionary-subtitle {
+    font-family: variables.$title-font;
+    font-size: 1em;
+}
+
+.care-subtitle{
+    margin-top: variables.$spacer;
 }
 

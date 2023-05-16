@@ -102,13 +102,17 @@
     font-size: 1.1em;
   }
 }
-.menu__item:hover {
+.menu__item:hover, .menu__item:focus {
   cursor: pointer;
 }
 @media screen and (min-width: 680px) {
-  .menu__item:hover {
+  .menu__item:hover, .menu__item:focus {
     color: #d40000;
   }
+}
+
+.menu__item--active {
+  color: #d40000;
 }
 
 .footer__description {
@@ -118,6 +122,7 @@
 
 .main__image {
   width: 100%;
+  border-radius: 4px;
 }
 .main__title {
   font-size: 1.5em;
@@ -126,6 +131,9 @@
   .main__title {
     font-size: 2em;
   }
+}
+.main__link {
+  color: #d40000;
 }
 .main__text {
   font-size: 1em;
@@ -178,10 +186,12 @@
 
 .news__title {
   font-family: "Open Sans", sans-serif;
+  text-align: center;
 }
 @media screen and (min-width: 680px) {
   .news__title {
     font-size: 2em;
+    margin-bottom: 40px;
   }
 }
 
@@ -244,6 +254,8 @@ body {
 
 .contacts__title {
   font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 680px) {
   .contacts__title {
@@ -251,8 +263,32 @@ body {
   }
 }
 
+.contacts__name {
+  color: #d40000;
+  font-size: 1.2em;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 10px;
+}
+
 .contacts__adress {
-  margin: 20px 0;
+  color: black;
+  padding: 20px;
+  font-weight: 700;
+}
+
+.adress-wrapper {
+  background-color: white;
+  text-align: center;
+  border-radius: 4px;
+  padding: 20px;
+}
+@media screen and (min-width: 680px) {
+  .adress-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 }
 
 .contact {
@@ -262,6 +298,11 @@ body {
   border-radius: 3px;
   padding: 20px;
   margin: 20px 0;
+}
+@media screen and (min-width: 680px) {
+  .contact {
+    margin: 0;
+  }
 }
 .contact__name {
   font-family: "Open Sans", sans-serif;
@@ -278,6 +319,7 @@ body {
 .kendo__title {
   font-size: 1.5em;
   font-family: "Open Sans", sans-serif;
+  text-align: center;
 }
 @media screen and (min-width: 680px) {
   .kendo__title {
@@ -291,14 +333,13 @@ body {
 
 .kendo__item {
   display: block;
-  color: white;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
-  padding: 5px;
+  padding: 5px 0;
 }
 @media screen and (min-width: 680px) {
   .kendo__item {
-    padding: 10px;
+    padding: 10px 0;
     font-size: 1.1em;
   }
 }
@@ -307,14 +348,21 @@ body {
   cursor: pointer;
 }
 
+.kendo__description {
+  margin: 10px 0;
+}
+
 .kendo__subtitle {
   font-size: 1em;
   font-family: "Open Sans", sans-serif;
+  margin: 40px 0 20px 0;
 }
 @media screen and (min-width: 680px) {
   .kendo__subtitle {
     padding: 10px;
     font-size: 1.5em;
+    text-align: center;
+    margin: 40px 0;
   }
 }
 
@@ -327,12 +375,37 @@ body {
   margin: 0 20px 6px 0;
 }
 
+.kendo-equipment__image {
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.care-subtitle,
+.dictionary-subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+.care-subtitle {
+  margin-top: 20px;
+}
+
 .training__image {
   width: 100%;
-  margin: 20px 0;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+@media screen and (min-width: 680px) {
+  .training__image {
+    width: 75%;
+  }
 }
 .training__title {
   font-family: "Open Sans", sans-serif;
+  margin: 0 0 40px 0;
+  text-align: center;
 }
 @media screen and (min-width: 680px) {
   .training__title {
@@ -342,11 +415,13 @@ body {
 .training__subtitle {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
-  margin: 40px 0;
+  margin: 40px 0 10px 0;
 }
 @media screen and (min-width: 680px) {
   .training__subtitle {
     font-size: 1.5em;
+    text-align: center;
+    margin: 40px 0;
   }
 }
 .training__subtitle::before {
@@ -371,7 +446,7 @@ body {
   font-weight: 700;
   color: #d40000;
   font-size: 1.2em;
-  margin: 10px 0;
+  margin: 0 0 10px 0;
 }
 @media screen and (min-width: 680px) {
   .course__title {
@@ -379,7 +454,32 @@ body {
   }
 }
 .course__subtitle {
-  margin: 20px 0;
+  margin: 20px 0 10px;
   color: #11052E;
   font-weight: 700;
+}
+
+.table {
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  margin: 20px 0 40px 0;
+}
+.table__thead {
+  color: #d40000;
+  text-align: left;
+}
+.table__row {
+  padding-bottom: 10px;
+}
+
+tbody td {
+  padding: 5px;
+}
+
+th {
+  width: 33.3333333333%;
+  padding: 5px;
 }/*# sourceMappingURL=style.css.map */

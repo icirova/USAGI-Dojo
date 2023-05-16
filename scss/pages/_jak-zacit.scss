@@ -3,12 +3,23 @@
 .training {
     &__image {
         width: 100%;
-        margin: variables.$spacer 0;
+        border-radius: 4px;
+        display: block;
+        margin: 0 auto;
+
+        @media screen and (min-width: 680px) {
+            width: 75%;
+            
+           
+        }  
 
     }
 
     &__title {
         font-family: variables.$title-font;
+        margin: 0 0 variables.$double-spacer 0;
+        text-align: center;
+
         @media screen and (min-width: 680px) {
             font-size: 2em;
         }  
@@ -17,9 +28,13 @@
     &__subtitle {
         font-family: variables.$title-font;
         font-size: 1em;
-        margin: variables.$double-spacer 0;
+        margin: variables.$double-spacer 0 variables.$half-spacer 0;
+        
+
         @media screen and (min-width: 680px) {
             font-size: 1.5em;
+            text-align: center;
+            margin: variables.$double-spacer 0;
         }  
     }
 
@@ -32,6 +47,8 @@
         margin: 0 variables.$spacer 6px 0;
     }
 }
+
+
 
 .course {
     min-height: 120px;
@@ -46,14 +63,15 @@
         font-weight: 700;
         color: variables.$color-primary;
         font-size: 1.2em;
-        margin: variables.$half-spacer 0;
+        margin: 0 0 variables.$half-spacer 0;
         @media screen and (min-width: 680px) {
             font-size: 2em;
+           
         }
     }
 
     &__subtitle {
-        margin: variables.$spacer 0;
+        margin: variables.$spacer 0 variables.$half-spacer;
         color: variables.$color-secundary;
         font-weight: 700;
     }

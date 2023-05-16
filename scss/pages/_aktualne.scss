@@ -13,9 +13,11 @@
 
 .news__title {
     font-family: variables.$title-font;
+    text-align: center;
 
     @media screen and (min-width: 680px) {
         font-size:2em;
+        margin-bottom: variables.$double-spacer;
     }
     
 

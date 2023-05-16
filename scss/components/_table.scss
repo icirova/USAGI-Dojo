@@ -1,0 +1,29 @@
+@use '../abstracts/variables';
+
+.table {
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    padding: variables.$half-spacer;
+    width: 100%;
+    margin: variables.$spacer 0 variables.$double-spacer 0;
+    
+    &__thead {
+        color: variables.$color-primary;
+        text-align: left;    
+    }
+
+    &__row {
+        padding-bottom: variables.$half-spacer;
+    }
+
+}
+
+tbody td{
+    padding: 5px; 
+}
+
+th {
+    width: calc(100% / 3);
+    padding: 5px;
+}
