@@ -1,0 +1,28 @@
+@use '../abstracts/variables';
+
+.card {
+    min-height: 120px;
+    background-color: white;
+    color:black;
+    border-radius: 3px;
+    padding: variables.$spacer;
+    margin: variables.$spacer 0;
+
+    @media screen and (min-width: 680px) {
+        margin: 0;
+    }
+
+    &__title {
+        font-family: variables.$title-font;
+        font-weight: 700;
+        color: variables.$color-primary;
+        font-size: 1.2em;
+        
+    }
+    &__subtitle {
+        margin: variables.$half-spacer 0;
+        color: variables.$color-secundary;
+        font-weight: 700;
+    }
+
+}

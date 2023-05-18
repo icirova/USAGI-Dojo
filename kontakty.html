@@ -4,54 +4,88 @@ title: Kontakty
 ---
 
 <section class="contacts">
-    <h1 class="contacts__title">Kontakty</h1>
     
-    
+    <h1 class="title">Kontakty</h1>
     
     <div class="adress-wrapper">
 
-        <div class="contacts__adress">
-            <p class="contacts__name">Usagi Dojo</p>
-            <p class="contacts__street">Lánská 55</p>
-            <p class="contacts__city">506 98 Hradec </p>
+        <div class="card card--adress">
+            
+            <p class="card__title">Usagi Dojo</p>
+            <p class="card__description">Eliščina 55</p>
+            <p class="card__description">500&nbsp;02 Hradec Králové</p>
+            <p class="card__description card__description--adress">Trénujeme v tělocvičně ZŠ Josefa Gočára</p>
+            <p class="card__description">Tylovo nábřeží 1140</p>
+            <p class="card__description">500&nbsp;02 Hradec Králové</p>
+                
+
         </div>
 
-        <div class="contacts__map">
-            <img src="/images/Usagi_logo.svg" alt="mapa" width="50%">
-        </div>
+        
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1788.9512837756306!2d15.822790697339979!3d50.20778357850383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c2b59ef19b50f%3A0x500435743dc76907!2zWsOha2xhZG7DrSDFoWtvbGEgYSBNYXRlxZlza8OhIMWha29sYSBKb3NlZmEgR2_EjcOhcmEsIEhyYWRlYyBLcsOhbG92w6k!5e0!3m2!1scs!2scz!4v1684341686775!5m2!1scs!2scz"  width="100%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       
 
     </div>
 
-    
-    
     <div class="contact-wrapper">
 
-        <div class="contact">
-            <p class="contact__name">Lukáš Výborný</p>
-            <p class="contact__role">Vedoucí klubu</p>
-            <p class="contact__phone">663 456 789</p>
-            <p class="contact__email">vedouc@usagi.ab</p>
+        <div class="card">
+            <p class="card__title">Lukáš Výborný</p>
+            <p class="card__subtitle">Vedoucí klubu</p>
+            <div class="contact-icon-wrapper">
+                <img class="card__icon" src="/images/phone_icon.svg" alt="phone icon" width="20px"> 
+                <p class="card__description">+420 987 654 321</p>
+            </div>
+
+            <div class="contact-icon-wrapper">
+                <img class="card__icon" src="/images/mail_icon.svg" alt="mail icon" width="20px"> 
+                <a  class="link" href="mailto:name&abc.ab">vedouci@usagi.ab</a>
+            </div>
         </div>
 
-        <div class="contact">
-            <p class="contact__name">Iveta Bohatá</p>
-            <p class="contact__role">Pokladník</p>
-            <p class="contact__phone"> <img class="phone-icon" src="/images/phone_icon.svg" alt="phone icon" width="20px"> 987 654 321</p>
-            <p class="contact__email"> <img class="mail-icon" src="/images/mail_icon.svg" alt="mail icon" width="20"> pokladnik@usagi.ab</p>
+        <div class="card">
+            <p class="card__title">Iveta Bohatá</p>
+            <p class="card__subtitle">Pokladník</p>
+
+            <div class="contact-icon-wrapper">
+                <img class="card__icon" src="/images/phone_icon.svg" alt="phone icon" width="20px"> 
+                <p class="card__description">+420 111 654 321</p>
+            </div>
+
+            <div class="contact-icon-wrapper">
+                <img class="card__icon" src="/images/mail_icon.svg" alt="mail icon" width="20px"> 
+                <a  class="link" href="mailto:name&abc.ab">pokladnik@usagi.ab</a>
+            </div>
+
         </div>
 
-        <div class="contact">
-            <p class="contact__name">Jan Trpělivý</p>
-            <p class="contact__role">Učitel kendó</p>
-            <p class="contact__phone">654 456 654</p>
-            <p class="contact__email">ucitel@usagi.aa</p>
+        <div class="card">
+            <p class="card__title">Jan Trpělivý</p>
+            <p class="card__subtitle">Učitel kendó</p>
+            <div class="contact-icon-wrapper">
+                <img class="card__icon" src="/images/phone_icon.svg" alt="phone icon" width="20px"> 
+                <p class="card__description">+420 222 654 321</p>
+            </div>
+
+            <div class="contact-icon-wrapper">
+                <img class="card__icon" src="/images/mail_icon.svg" alt="mail icon" width="20px">
+                <a  class="link" href="mailto:name&abc.ab">ucitel@usagi.ab</a> 
+                
+            </div>
         </div>
 
-        <div class="contact">
-            <p class="contact__name">Renata Mrštná</p>
-            <p class="contact__role">Učitel kendó</p>
-            <p class="contact__phone">693 693 693</p>
-            <p class="contact__email">ucitelka@usagi.al</p>
+        <div class="card">
+            <p class="card__title">Renata Mrštná</p>
+            <p class="card__subtitle">Učitel kendó</p>
+            <div class="contact-icon-wrapper">
+                <img class="card__icon" src="/images/phone_icon.svg" alt="phone icon" width="20px"> 
+                <p class="card__description">+420 987 333 321</p>
+            </div>
+
+            <div class="contact-icon-wrapper">
+                <img class="card__icon" src="/images/mail_icon.svg" alt="mail icon" width="20px"> 
+                <a  class="link" href="mailto:name&abc.ab">ucitelka@usagi.ab</a>
+            </div>
         </div>
 
     </div>

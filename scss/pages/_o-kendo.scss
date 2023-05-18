@@ -1,85 +1,60 @@
 @use '../abstracts/variables';
 
-.kendo__title {
-    font-size: 1.5em;
-    font-family: variables.$title-font;
-    text-align: center;
-
-    @media screen and (min-width: 680px) {
-        font-size: 2em;
+.kendo {
+    &__list {
+        margin: variables.$spacer 0;
     }
 
-}
-
-.kendo__list {
-    margin: variables.$spacer 0;
-}
-
-
-.kendo__item {
+    &__item {
         display: block;
-        // color: white;
         text-decoration: none;
         font-family: variables.$title-font;
         padding: 5px 0;
-        
+            
         @media screen and (min-width: 680px) {
             padding: variables.$half-spacer 0;
             font-size: 1.1em;
         }
     }
 
-//     .kendo__item::before {
-//         content: "";
-//         display: inline-block;
-//         width: 30px;
-//         height: 3px;
-//         background-color: variables.$color-primary;
-//         margin: 0 variables.$spacer 6px 0;
-// }
-    
-    .kendo__item:hover {
+    &__item:hover {
         cursor: pointer;
-
     }
 
-    .kendo__description {
+    &__link {
+        text-decoration: none;
+        color: white;
+    }
+
+    &__description {
         margin: variables.$half-spacer 0;
     }
 
-    .kendo__subtitle {
+    &__subtitle {
         font-size: 1em;
         font-family: variables.$title-font;
         margin: variables.$double-spacer 0 variables.$spacer 0;
-
+        
         @media screen and (min-width: 680px) {
-                    padding: variables.$half-spacer;
-                    font-size: 1.5em;
-                    text-align: center;
-                    margin: variables.$double-spacer 0;
-                }
+            padding: variables.$half-spacer;
+            font-size: 1.5em;
+            text-align: center;
+            margin-top: variables.$triple-spacer;
+            margin-bottom: variables.$spacer;
+            }
     }
 
-    .kendo__subtitle::before {
+    &__subtitle::before {
         content: "";
         display: inline-block;
         width: 30px;
         height: 3px;
         background-color: variables.$color-primary;
         margin: 0 variables.$spacer 6px 0;
+    }
 }
-
-
-
-// .kendo-article {
-//     background-color: white;
-//     color: black;
-//     padding: variables.$spacer;
-//     border-radius: 4px;
-
-// }
-
-.kendo-equipment__image {
+    
+.equipment-image {
     width: 100%;
     border-radius: 4px;
     margin-top: variables.$spacer;

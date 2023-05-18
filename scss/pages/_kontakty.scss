@@ -1,6 +1,34 @@
 @use '../abstracts/variables';
 
+.card__description--adress {
+    margin-top: variables.$half-spacer;
+    font-weight: 700;
+}
 
+
+
+.adress-wrapper {
+    background-color: white;
+    text-align: center;
+    border-radius: 4px;
+    padding: variables.$spacer;
+    margin-top: variables.$spacer;
+
+    @media screen and (min-width: 680px) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: variables.$spacer;
+        text-align: left;
+    }
+}
+
+
+ .map {
+    @media screen and (min-width: 680px) {
+        width: 50%;
+    }
+    
+ }
 
 .contact-wrapper {
     
@@ -11,73 +39,13 @@
     }
 }
 
-.contacts__title {
-    font-family: variables.$title-font;
-    text-align: center;
-    margin-bottom: variables.$double-spacer;
-    
-    @media screen and (min-width: 680px) {
-        font-size:2em;
-    }
-   
-
+.contact-icon-wrapper {
+    display: flex;
+    gap: variables.$half-spacer;
+    align-items: center;
+    padding: 5px 0;
 }
 
-
-
-.contacts__name {
-        color: variables.$color-primary;
-        font-size: 1.2em;
-        font-family: variables.$title-font;
-        margin-bottom: variables.$half-spacer;
-    }
-.contacts__adress {
-    color: black;
-    padding: variables.$spacer;
-    font-weight: 700;  
-}
-
-// .contacts__map {
-//     margin: variables.$spacer 0;
-// }
-
-.adress-wrapper {
-    background-color: white;
-    text-align: center;
-    border-radius: 4px;
-    padding: variables.$spacer;
-
-    @media screen and (min-width: 680px) {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: variables.$spacer;
-    }
-}
-
-.contact {
-    min-height: 120px;
-    background-color: white;
-    color:black;
-    border-radius: 3px;
-    padding: variables.$spacer;
-    margin: variables.$spacer 0;
-
-    @media screen and (min-width: 680px) {
-        margin: 0;
-    }
-
-    &__name {
-        font-family: variables.$title-font;
-        font-weight: 700;
-        color: variables.$color-primary;
-        font-size: 1.2em;
-       
-    }
-    &__role {
-        margin: variables.$half-spacer 0;
-        color: variables.$color-secundary;
-        font-weight: 700;
-    }
-
+.card.card--adress {
+    padding: 0;
 }
