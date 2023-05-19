@@ -5,27 +5,39 @@
     font-weight: 700;
 }
 
-
-
 .adress-wrapper {
-    background-color: white;
-    text-align: center;
-    border-radius: 4px;
-    padding: variables.$spacer;
-    margin-top: variables.$spacer;
-
+    
     @media screen and (min-width: 680px) {
+        height: 250px;
+        background-color: white;
+        border-radius: 4px;
         display: flex;
-        justify-content: space-between;
-        margin-bottom: variables.$spacer;
-        text-align: left;
+        margin-bottom: variables.$triple-spacer;
+        padding: variables.$spacer;
     }
 }
 
+.card.card--adress {
+    padding: variables.$spacer;
+    margin-bottom: 0;
 
- .map {
     @media screen and (min-width: 680px) {
-        width: 50%;
+        flex: 1;
+        padding: 0;
+    }
+}
+
+.map {
+    border-radius: 4px;
+    height: 100%;   
+}
+
+ .adress-map {
+    margin-top: variables.$spacer;
+    border-radius: 4px;
+    @media screen and (min-width: 680px) {
+        flex: 1;
+        margin: 0;
     }
     
  }
@@ -44,8 +56,4 @@
     gap: variables.$half-spacer;
     align-items: center;
     padding: 5px 0;
-}
-
-.card.card--adress {
-    padding: 0;
 }

@@ -224,25 +224,41 @@ body {
   font-weight: 700;
 }
 
-.adress-wrapper {
-  background-color: white;
-  text-align: center;
-  border-radius: 4px;
-  padding: 20px;
-  margin-top: 20px;
-}
 @media screen and (min-width: 680px) {
   .adress-wrapper {
+    height: 250px;
+    background-color: white;
+    border-radius: 4px;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    text-align: left;
+    margin-bottom: 60px;
+    padding: 20px;
   }
 }
 
+.card.card--adress {
+  padding: 20px;
+  margin-bottom: 0;
+}
 @media screen and (min-width: 680px) {
-  .map {
-    width: 50%;
+  .card.card--adress {
+    flex: 1;
+    padding: 0;
+  }
+}
+
+.map {
+  border-radius: 4px;
+  height: 100%;
+}
+
+.adress-map {
+  margin-top: 20px;
+  border-radius: 4px;
+}
+@media screen and (min-width: 680px) {
+  .adress-map {
+    flex: 1;
+    margin: 0;
   }
 }
 
@@ -259,10 +275,6 @@ body {
   gap: 10px;
   align-items: center;
   padding: 5px 0;
-}
-
-.card.card--adress {
-  padding: 0;
 }
 
 .kendo__list {
