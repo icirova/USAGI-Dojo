@@ -8,9 +8,12 @@
 
 
 .header {
-    // background-image: url(/images/men.jpg);
-    background-size: cover;
+
+    
+    
     @media screen and (min-width: 680px) {
+        background-image: url(/images/backgroung-image.png);
+        background-size: cover;
         height: 360px;
         display: flex;
         flex-direction: column;
@@ -60,7 +63,6 @@
           
     }
 }
-
 
 
 

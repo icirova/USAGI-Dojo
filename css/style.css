@@ -4,11 +4,10 @@
   align-items: center;
 }
 
-.header {
-  background-size: cover;
-}
 @media screen and (min-width: 680px) {
   .header {
+    background-image: url(/images/backgroung-image.png);
+    background-size: cover;
     height: 360px;
     display: flex;
     flex-direction: column;
@@ -189,7 +188,7 @@ html {
 }
 
 body {
-  background-color: #11052E;
+  background-color: #020202;
   color: white;
   font-family: "Noto Serif", serif;
 }
@@ -461,6 +460,6 @@ th {
 }
 .card__subtitle {
   margin: 10px 0;
-  color: #11052E;
+  color: #020202;
   font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
