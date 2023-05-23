@@ -2,7 +2,7 @@
 layout: layouts/aktuality.njk
 tags: news
 title: "Rozloučení se školním rokem "
-date: 2023-05-23T09:06:25.758Z
+date: 2023-05-23T09:07:26.311Z
 term: 17. 6. 2023
 perex: Vážení přátelé, zveme Vás na každoroční akci Rozloučení se školním rokem,
   která se koná v areálu rybníka Písák.
