@@ -2,6 +2,9 @@ module.exports=function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("images");
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("icons");
+    eleventyConfig.addPassthroughCopy("admin");
+
+    //eleventyConfig.addPassthroughCopy("**/*.js");
 
     eleventyConfig.addFilter("limit", function (arr, limit) {
         return arr.slice(0, limit);
