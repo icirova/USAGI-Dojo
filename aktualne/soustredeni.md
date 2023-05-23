@@ -4,6 +4,7 @@ title: Soustředění v Krkonoších
 term: 19. - 21. 5. 2023
 perex: Vážení přátelé, zveme Vás na každoroční soustředění, které se koná od pátku 19. 5. do neděle 21. 5. v Krkonoších.
 tags: news
+date: 2023-2-19T20:00:00
 ---
 
 <p class="paragraph">Toto soustředění bude skvělou příležitostí pro prohloubení našich kendó dovedností, posílení týmového ducha a vytvoření nezapomenutelných vzpomínek.
