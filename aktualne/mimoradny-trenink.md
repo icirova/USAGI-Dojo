@@ -1,10 +1,11 @@
 ---
 layout: layouts/aktuality.njk
-title: Mimořádný trénink
-term: 27. 5. 2023
-perex: Vážení přátelé, zveme Vás na mimořádný trénink, který se koná 27. 5. 2023 v městském parku Květinové sady v Hradci Králové.
 tags: news
-date: 2023-5-27T20:00:00
+title: Mimořádný trénink
+date: 2023-05-21T22:00:00.000Z
+term: 27. 5. 2023
+perex: Vážení přátelé, zveme Vás na mimořádný trénink, který se koná 27. 5. 2023
+  v městském parku Květinové sady v Hradci Králové.
 ---
 <p class="paragraph">
 Po měsících tréninku v uzavřených prostorách je na čase vyrazit ven a užít si krásy přírody.
