@@ -10,7 +10,7 @@ Jedná se o webové stránky fiktivního sportovního klubu. Je to vícestránko
 - BEM 
 - kolekce
 
-Web je publikován přes hostingovou službu Netlify.
+Web je publikován přes hostingovou službu Netlify. Využívá také redakční systém pro vkládání aktualit Netlify CMS.
 
 ## Zprovoznění na lokálním PC
 
