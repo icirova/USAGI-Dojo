@@ -1,13 +1,14 @@
 # USAGI-Dojo
-Závěrečný projekt pro kurz Staň se kodérkou od Czechitas.
+Závěrečný projekt pro kurz Staň se kodérkou od Czechitas. 
 
-Jedná se o webové stránky fiktivního sportovního klubu. 
+Jedná se o webové stránky fiktivního sportovního klubu. Je to vícestránkový web. Je responzivní - má mobilní a PC verzi.
 
 ## Technologie
 
 - generátor statických webů Eleventy
 - SASS
-- Bem 
+- BEM 
+- kolekce
 
 Web je publikován přes hostingovou službu Netlify.
 

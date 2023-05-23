@@ -462,4 +462,31 @@ th {
   margin: 10px 0;
   color: #020202;
   font-weight: 700;
+}
+
+.card__title--news {
+  font-size: 1.5em;
+}
+@media screen and (min-width: 680px) {
+  .card__title--news {
+    font-size: 2em;
+  }
+}
+.card__date {
+  color: #020202;
+  margin: 20px 0;
+}
+@media screen and (min-width: 680px) {
+  .card__date {
+    margin: 40px 0;
+  }
+}
+
+.link--news {
+  display: block;
+  margin-top: 10px;
+}
+
+.paragraph {
+  margin: 10px 0;
 }/*# sourceMappingURL=style.css.map */

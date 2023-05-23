@@ -3,6 +3,10 @@ module.exports=function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("icons");
 
+    eleventyConfig.addFilter("limit", function (arr, limit) {
+        return arr.slice(0, limit);
+    });
+
     return{
         templateFormats: ["njk", "html", "md", "liquid"],
         markdownTemplateEngine: "njk",
