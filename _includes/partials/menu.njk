@@ -8,8 +8,23 @@
         <a class="menu__item {{ 'menu__item--active' if page.fileSlug === 'aktualne' }}" href="/aktualne/">Aktuálně</a>
         <a class="menu__item {{ 'menu__item--active' if page.fileSlug === 'kalendar' }}" href="/kalendar/">Kalendář</a>
         <a class="menu__item {{ 'menu__item--active' if page.fileSlug === 'jak-zacit' }}" href="/jak-zacit/">Jak začít</a>
-        <a class="menu__item {{ 'menu__item--active' if page.fileSlug === 'o-kendo' }}" href="/o-kendo/">O kendó</a>    
+        
+        <div class="dropdown">
+            <p class="menu__item menu__item--drop {{ 'menu__item--active' if page.fileSlug === 'o-kendo' }}" href="/o-kendo/">O kendó<i class="fa fa-caret-down"> </i></p> 
+            
+                <div class="dropdown__list">
+                    <a class="dropdown__link" href="/o-kendo/#link-history" >Historie</a>
+                    <a class="dropdown__link" href="/o-kendo/#link-equipment" >Vybavení</a>
+                    <a class="dropdown__link" href="/o-kendo/#link-care" >Údržba výstroje</a>
+                    <a class="dropdown__link" href="/o-kendo/#link-ethics" >Etika</a>
+                    <a class="dropdown__link" href="/o-kendo/#link-kata" >Kendó kata</a>
+                    <a class="dropdown__link" href="/o-kendo/#link-dictionary" >Základní japonské pojmy</a>
+                </div>
+        </div>
+
         <a class="menu__item {{ 'menu__item--active' if page.fileSlug === 'kontakty' }}" href="/kontakty/">Kontakty</a>  
+
     </div> 
         
 </nav>
+
