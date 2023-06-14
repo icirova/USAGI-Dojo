@@ -95,6 +95,7 @@
 .dropdown__list a:hover,
 .dropdown__list a:focus {
     font-weight: 700;
+    color: variables.$color-secundary;
 }
 
 .fa-caret-down {
