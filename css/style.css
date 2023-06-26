@@ -48,7 +48,7 @@
 .header__description {
   font-size: 1em;
   font-family: "Open Sans", sans-serif;
-  animation: slideLeftAnimation 1.5s ease-out;
+  animation: slideLeftAnimation 1.2s ease-out;
 }
 @keyframes slideLeftAnimation {
   from {
