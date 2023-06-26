@@ -1,16 +1,22 @@
 @use 'layout/header';
 @use 'layout/menu';
 @use 'layout/footer';
+
 @use 'pages/index';
 @use 'pages/aktualne';
-@use 'base/base';
 @use 'pages/kontakty';
 @use 'pages/o-kendo';
 @use 'pages/jak-zacit';
 @use 'pages/kalendar';
+@use 'pages/aktuality';
+
+@use 'base/base';
+
 @use 'components/table';
 @use 'components/cards';
-@use 'pages/aktuality';
+
+
+
 
 
 

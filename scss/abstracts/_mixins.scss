@@ -1,0 +1,23 @@
+@use '../abstracts/variables';
+
+@mixin slideDownAnimation {
+    @keyframes slideDownAnimation {
+        from {
+            transform: translateY(-120px);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+  }
+
+  @mixin slideLeftAnimation {
+    @keyframes slideLeftAnimation {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+  }

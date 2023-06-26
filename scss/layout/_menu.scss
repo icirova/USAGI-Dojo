@@ -1,4 +1,5 @@
 @use '../abstracts/variables';
+@use '../abstracts/mixins';
 
 .menu {
 
@@ -56,6 +57,7 @@
 
         @media screen and (min-width: 680px) {
             color: variables.$color-primary;
+            transform: translateY(3px);
         }
     }
 }

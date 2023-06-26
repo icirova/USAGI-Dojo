@@ -1,4 +1,5 @@
 @use '../abstracts/variables';
+@use '../abstracts/mixins';
 
 .header-aligner {
     display: flex;
@@ -37,6 +38,9 @@
         font-size: 1.5em;
         font-family: variables.$title-font;
         font-weight: 700;
+
+        @include mixins.slideDownAnimation;
+        animation: slideDownAnimation 1s ease-out;
        
         @media screen and (min-width: 680px) {
             font-size: 2.5em;
@@ -46,7 +50,10 @@
     &__description {
         font-size: 1em;
         font-family: variables.$title-font;
-        
+
+        @include mixins.slideLeftAnimation;
+        animation: slideLeftAnimation 1.5s ease-out;
+
         @media screen and (min-width: 680px) {
             font-size: 1.5em;
         }
@@ -63,8 +70,3 @@
           
     }
 }
-
-
-
-
-  
