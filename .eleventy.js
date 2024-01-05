@@ -3,6 +3,8 @@ module.exports=function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("icons");
     eleventyConfig.addPassthroughCopy("admin");
+    eleventyConfig.addPassthroughCopy("scripts");
+
 
     // eleventyConfig.addPassthroughCopy("**/*.js");
 
