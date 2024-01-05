@@ -71,8 +71,8 @@
 .carousel {
 
     display: flex;
-    margin-bottom: variables.$half-spacer;
-    transition: transform 0.7s ease-in-out;
+    margin-bottom: variables.$spacer;
+    transition: transform 0.6s ease-in-out;
    
     &__item {
        flex: 0 0 100%;
@@ -88,20 +88,24 @@
 
     &__buttons {
         display: flex; 
-        justify-content: space-around;
+        justify-content: center;
         gap: variables.$spacer;
     }
 
     &__button {
         display: block;
         border:none;
-        color: white;
-        font-size: 200%;
-        background-color: variables.$color-secundary;
+        color: #555;
+        font-size: 70%;
 
         &:hover {
-            color: variables.$color-primary;
+            color: #bababa;
             cursor: pointer;
+        }
+
+        &--active {
+            color: #bababa;
+            transition: color 0.3s ease-in-out;
         }
        
     }

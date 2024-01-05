@@ -1,11 +1,13 @@
 const carousel = document.querySelector(".carousel");
 const slides = document.querySelectorAll(".carousel__item");
-const prevButton = document.querySelector(".carousel__button--prev");
-const nextButton = document.querySelector(".carousel__button--next");
+const buttons = document.querySelectorAll(".carousel__button");
+
 
 let currentIndex = 0;
 
-function showSlide(index) {
+//automatické přetáčení snímků
+
+function showSlideAuto(index) {
     if (index < 0) {
         currentIndex = slides.length - 1;
     } else if (index >= slides.length) {
@@ -13,27 +15,53 @@ function showSlide(index) {
     }
 
     carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-
+    updateButtons();
+    
 }
 
-if (nextButton && prevButton) {
-    nextButton.addEventListener("click", () => {
-        currentIndex++;
-        showSlide(currentIndex);
-    });
-
-    prevButton.addEventListener("click", () => {
-        currentIndex--;
-        showSlide(currentIndex);
+function updateButtons() {
+    buttons.forEach((button, buttonIndex) => {
+        button.classList.remove("carousel__button--active");
+        if (buttonIndex === currentIndex) {
+            button.classList.add("carousel__button--active");
+        }
     });
 }
 
- const autoAdvanceInterval = 3000;
+const autoAdvanceInterval = 4000;
 
 setInterval(function() {
     currentIndex++;
-    showSlide(currentIndex);
+    showSlideAuto(currentIndex);
 }, autoAdvanceInterval);
+
+
+//ruční výběr slidů
+
+function showSlide(index) {
+    slides.forEach((slide) => {
+        slide.classList.remove("carousel__item--active");
+    });
+
+    buttons.forEach((button, buttonIndex) => {
+        button.classList.remove("carousel__button--active");
+        if (buttonIndex === index) {
+            button.classList.add("carousel__button--active");
+        }
+    });
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+}
+
+
+buttons.forEach((button, buttonIndex) => {
+    button.addEventListener("click", function () {
+        currentIndex = buttonIndex;
+        showSlide(currentIndex);
+    });
+});
+
+
+ 
 
 
 

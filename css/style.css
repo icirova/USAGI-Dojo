@@ -237,8 +237,8 @@
 
 .carousel {
   display: flex;
-  margin-bottom: 10px;
-  transition: transform 0.7s ease-in-out;
+  margin-bottom: 20px;
+  transition: transform 0.6s ease-in-out;
 }
 .carousel__item {
   flex: 0 0 100%;
@@ -251,19 +251,22 @@
 }
 .carousel__buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 20px;
 }
 .carousel__button {
   display: block;
   border: none;
-  color: white;
-  font-size: 200%;
-  background-color: #020202;
+  color: #555;
+  font-size: 70%;
 }
 .carousel__button:hover {
-  color: #d40000;
+  color: #bababa;
   cursor: pointer;
+}
+.carousel__button--active {
+  color: #bababa;
+  transition: color 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 680px) {
